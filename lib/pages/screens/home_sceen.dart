@@ -1,226 +1,69 @@
-import 'package:celebrity_online/pages/drower.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+import 'package:celebrity_online/pages/drower.dart';
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
 
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
+   HomeScreen({super.key});
+
+
+  List <String> imageList = [
+    'https://ugamusic.ug/storage/image_cover/Ronaldo%20by%20Levixone_1636845786.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpj2tzs8R-_jVaZbaomUij-HOFj70CJVL4oakG1dzCCENHwLKgVx1egNcdZlyN2HH9Eg4&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1UUZYDtkPrA2spkc1R5CFy1Yigx-hnJPSjg&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsNxRan0cBsHSp_9xLD5gw7Q4OVJvxICfxw&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZmJ-yorh65P7tzgNddNUEho-7fpFNXPeQA&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fCyKvlRM88oIhvqNIhIvmMO8v7XhOKleeA&usqp=CAU'
+  ];
+
+  // List <String> names = [
+  //   'Levixone',
+  //   'Fik Fameica',
+  //   'Spice Diana',
+  //   'Golola Moses Ug',
+  //   'Faridah Nakazibwe',
+  //   'Mr Henrie'
+  // ];
+
+  // List <String> price = [
+  //   '\$20',
+  //   '\$20',
+  //   '\$20',
+  //   '\$20',
+  //   '\$20',
+  //   '\$20',
+  // ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xFF3B5999),
-      drawer: const NavBar(),// the side menue
-      appBar: AppBar(actions: [
-        IconButton(onPressed: (){},
-        icon: const Icon(Icons.search))
-      ],
-      backgroundColor:Color(0xFF3B5999),
+      backgroundColor: Colors.black,
+      drawer: const NavBar(),
+      appBar: AppBar(
+
+        title: const Text('Home'),
       ),
 
-      body: const Padding(
-        
-        padding: EdgeInsets.all(8.0),
-        child:  Column(
-          children: [
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-      
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-      
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-      
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 100,
-                          height: 200,
-                          child: Card(
-                            child: Column(
-                              children: [
-                               Text('WORK')
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    
-                  ],
-                ),
-              ), 
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            SingleChildScrollView(
-               scrollDirection: Axis.horizontal,
-              child: Row(
-                  children: [
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                  
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                  
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                  
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 100,
-                            height: 200,
-                            child: Card(
-                              child: Column(
-                                children: [
-                                 Text('WORK')
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-            ),  
-          ],
-        ),
-      ),
-        bottomNavigationBar: Container(
-          color: const Color(0xFFE3EBFF),
-          child:  Padding(
-            padding:  const EdgeInsets.symmetric(horizontal:10, vertical: 12),
-            child:  GNav(
-              backgroundColor:const Color(0xFFE3EBFF),
-              activeColor:const Color(0xFFE3EBFF),
-              tabBackgroundColor: Color(0xFFC474A6),
-              padding:const EdgeInsets.all(16),
-              gap: 8,
-
-              onTabChange:(index) {print(index);},//Navigating to the next page functionality here
-
-              tabs: const [
-                GButton(icon: Icons.home_outlined,
-                text: 'Home',
-                ),
-                GButton(icon: Icons.favorite_border_sharp,
-                text: 'Favourites'
-                ),
-                GButton(icon: Icons.notification_add_outlined,
-                text: 'Notifications'
-                ),
-                GButton(icon: Icons.person,
-                text: 'Profile'
-                )
-              ]),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: GridView.builder(
+            itemCount: imageList.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
           ),
+          itemBuilder:(context, index){
+            return  Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
+              image: DecorationImage(
+                image: NetworkImage(imageList[index]),
+                fit: BoxFit.cover
+              ),),
+
+            );
+          }),
         ),
-  );
+      ),
+    );
   }
 }

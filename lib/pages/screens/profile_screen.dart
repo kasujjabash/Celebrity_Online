@@ -1,3 +1,4 @@
+import 'package:celebrity_online/pages/drower.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -18,8 +19,9 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const NavBar(),
       appBar: AppBar(
-        title: const Text('Profile Page'),
+        title: const Text('Profile'),
       ),
     );
   }
