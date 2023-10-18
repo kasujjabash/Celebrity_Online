@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:celebrity_online/pages/navigation_page.dart';
 import 'package:celebrity_online/pages/screens/home_sceen.dart';
-
+import 'package:celebrity_online/pages/screens/profile_screen.dart';
+import 'package:celebrity_online/pages/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
 
 void main() async {
 
@@ -45,7 +45,7 @@ class _MyHomeState extends State<MyHome> {
      routes: {
       //   'WelcomeScreen' : (_) => const WelcomeScreen(),
         '/Home': (_) =>  HomeScreen(),
-      //   '/profile': (_) => const ProfilePage(),
+        '/profile': (_) => const ProfilePage(),
       //   '/login': (_) => const LoginScreen(),
    },//Routes created to enable navigation
 
@@ -53,7 +53,7 @@ class _MyHomeState extends State<MyHome> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const  Navigation(),
+      home: const Navigation(),
     );
   }
 }

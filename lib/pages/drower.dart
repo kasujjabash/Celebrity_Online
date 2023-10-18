@@ -24,11 +24,19 @@ class NavBar extends StatelessWidget {
               onTap: () =>Navigator.pop(context),
               ),
 
+// COMMUNICATIONS
               MyListTile(
-                icon: Icons.person, 
-                text: 'Profile', 
+                icon: Icons.video_call_outlined, 
+                text: 'Video call', 
                 onTap: onProfileTap ,
                 ),
+
+                MyListTile(
+                icon: Icons.chat_rounded, 
+                text: 'My chats', 
+                onTap: onProfileTap ,
+                ),
+//END OF COMMUNICATIONS
 
                  MyListTile(
                 icon: Icons.logout, 

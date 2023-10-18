@@ -40,6 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 image: NetworkImage('https://ugamusic.ug/storage/image_cover/FeffeBussiProfile_1602014086.jpg'),
                 fit: BoxFit.cover
                 )
+
             ),
 
           ),
